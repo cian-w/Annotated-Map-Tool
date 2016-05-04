@@ -1,0 +1,39 @@
+<html>
+
+    <head>
+        <title>Annotated Map Tool</title>
+        <script src="getCoords.js"></script>
+        <script src="script.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+      <div id="container">
+
+        <h1>Annotated Map Tool</h1>
+
+        <div id="map">
+           <canvas id="mapCanvas" width="600"
+           height="479" style="border:1px solid #000000;">
+           </canvas>
+           <div id="form">
+             <div id="form-input">
+                 <input type="text" name="pointlabel" id="label" onKeyPress="checkKey(event)">
+                 <input type="button" id="save"  value="Save Caption">
+             </div>
+           </div>
+           <div id="buttons"></div>
+        </div>
+
+
+            <table id="list">
+              <th>Move</th><th>Name/Coordinates</th><th> Delete</th>
+            </table>
+
+
+
+
+      </div>
+    </body>
+
+</html>
